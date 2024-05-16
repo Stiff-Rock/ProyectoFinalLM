@@ -1,0 +1,52 @@
+body {
+    font-family: Verdana;
+    margin: 0%;
+    background-image: none;
+    background-color: rgba(14, 13, 19, 0.9);
+    color: rgb(240, 240, 240);
+}
+
+header {
+    display: flex;
+    background-color: black;
+    max-width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+#headerSection {
+    margin-left: 1%;
+    margin-bottom: 1%;
+}
+
+#logo {
+    margin: 3%;
+    margin-top: 3%;;
+    margin-left: 0%;
+    width: 20%;
+    height: auto;
+}
+
+.textoNav {
+    margin: 1%;
+    margin-left: 0%;
+    font-size: 100%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.textoNav:hover {
+    color: rgb(189, 189, 189);
+}
+
+main {
+    margin: 1%;
+}
+
+footer {
+    font-size: 80%;
+    padding: 0.1%;
+    background-color: rgba(20, 19, 24, 0.9);
+}
+
