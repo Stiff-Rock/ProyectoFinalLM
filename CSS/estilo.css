@@ -1,5 +1,8 @@
-body {
+html {
     font-family: Verdana;
+}
+
+body {
     margin: 0%;
     background-image: none;
     background-color: rgba(14, 13, 19, 0.9);
@@ -14,22 +17,27 @@ header {
 }
 
 #headerSection {
-    margin-left: 1%;
+    margin-left: 1.5%;
     margin-bottom: 1%;
 }
 
 #logo {
-    margin: 3%;
-    margin-top: 3%;;
+    margin-top: 3%;
+    margin-bottom: 2%;
     margin-left: 0%;
     width: 20%;
     height: auto;
 }
 
+#menuHamburguesa {
+    display: none;
+}
+
 .textoNav {
     margin: 1%;
     margin-left: 0%;
-    font-size: 100%;
+    margin-right: 3%;
+    font-size: 110%;
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -38,6 +46,10 @@ header {
 
 .textoNav:hover {
     color: rgb(189, 189, 189);
+}
+
+#separator {
+    display: inline-flex;
 }
 
 main {
@@ -50,3 +62,51 @@ footer {
     background-color: rgba(20, 19, 24, 0.9);
 }
 
+#footer {
+    margin-left: 1%;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #headerSection {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #logo {
+        width: 30%;
+    }
+
+    #headerClickables {
+        display: flex;
+        align-items: center;
+    }
+
+    #menuHamburguesa {
+        display: flex;
+        width: 5%;
+        height: 100%;
+        margin-right: 5%;
+    }
+
+    .textoNav {
+        margin: 2%;
+        font-size: 90%;
+    }
+
+    main {
+        margin: 2%;
+    }
+
+    footer {
+        font-size: 70%;
+    }
+}
