@@ -4,23 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../JS/login.js"></script>
     <link rel="stylesheet" href="../CSS/estilo.css">
+    <link rel="stylesheet" href="../CSS/estiloLogin.css">
     <link rel="icon" type="image/favicon.ico" href="IMG/Favicon.ico">
     <title>Inicio de sesión</title>
 </head>
 
 <header>
-    <nav>
-
-    </nav>
+    <section id="headerSection">
+        <section id="headerClickables">
+            <a id="logoLink" href="index.html">
+                <img id="logo" src="../IMG/logo.svg" alt="Logo de pixar">
+            </a>
+        </section>
+    </section>
 </header>
+
 <body>
     <main>
-
+        <section id="loginBox">
+            <h1 id="loginTitle">Iniciar Sesión</h1>
+            <form id="loginForm">
+                <section id="usrField">
+                    <p id="usrPlaceholder">Usuario</p>
+                    <input type="text" id="username" name="username" required>
+                </section>
+                <section id="pwdField">
+                    <p id="pwdPlaceholder">Contraseña</p>
+                    <section id="pwdContainer">
+                        <input type="password" id="password" name="password" required>
+                        <img id="showPwd" src="../IMG/closedEye.svg" alt="Mostrar contraseña" onclick="showPassword()">
+                    </section>
+                </section>
+                <section id="errorMessage">
+                    <p id="loginError">Usuario o contraseña incorrectos</p>
+                </section>
+                <section id="btnLogin">
+                    <button type="submit" id="loginButton">Iniciar Sesión</button>
+                </section>
+            </form>
+        </section>
     </main>
+    <script src="../JS/login.js"></script>
 </body>
-    <footer>
-        <h3>&copy; NOMBREEE</h3>
-    </footer>
+
+<footer>
+    <section id="info">
+        <p>Para contactar a la empresa Peliculón S.L, puedes utilizar la siguiente información de contacto:</p>
+        <ul id="infoLista">
+            <li class="dato">Teléfono: 123-456-7890</li>
+            <li class="dato">Correo electrónico: info@peliculon.com</li>
+            <li class="dato">Dirección: Calle Principal, 123, Ciudad Película</li>
+        </ul>
+    </section>
+    <h3 id="footer">&copy; PixarTV - Todos los derechos reservados.</h3>
+</footer>
+
 </html>
