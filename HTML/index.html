@@ -5,24 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/estilo.css">
+    <link rel="stylesheet" href="../CSS/index.css">
     <link rel="icon" type="image/favicon.ico" href="IMG/Favicon.ico">
     <title>Bienvenido</title>
 </head>
 
 <header>
-    <a><img id="logoHeader" src="../IMG/logo.svg" alt="Logo de pixar"></a>
-    <nav>
-        <a class="textoNav" href="menu.html">Menu</a>
-        <a class="textoNav" href="form.html">Solicitar pelicula</a>
-    </nav>
+    <a id="logoLink" href="index.html">
+        <img id="logo" src="../IMG/logo.svg" alt="Logo de pixar">
+    </a>
 </header>
 
-<body>
-    <main>
+<body id="bodyIndex">
+    <main id="bodyIndexContent">
+        <section>
+            <h1 id="tituloIndex">Toda la animación de Pixar a un Click</h1>
+            <p id="parrafoIndex">En cualquier momento, cualquier lugar aquí estamos para que tengas un gran repertorio
+                de todo tipo de películas de animación del mundo Pixar.</p>
+        </section>
+        <section class="contenedorBotonLogin">
+            <a id="botonLogin" href="../HTML/login.html">Iniciar Sesión</a>
+        </section>
 
     </main>
 </body>
-    <footer>
-        <h3>&copy; NOMBREEE</h3>
-    </footer>
+<footer>
+    <h1 id="textoFooter">Disponible en las siguientes plataformas</h1>
+    <section id="contenedorImgFooter">
+        <section>
+            <img class="imgDispo" id="movil" src="../IMG/movil.png" alt="">
+            <p>Movil</p>
+        </section>
+        <section>
+            <img class="imgDispo" id="tablet" src="../IMG/tablet.png" alt="">
+            <p>Tablet</p>
+        </section>
+        <section>
+            <img class="imgDispo" id="ordenador" src="../IMG/ordenador.png" alt="">
+            <p>Ordenador</p>
+        </section>
+    </section>
+    <h3>&copy; </h3>
+    </p>
+</footer>
+
 </html>
