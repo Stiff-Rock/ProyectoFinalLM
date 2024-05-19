@@ -1,0 +1,129 @@
+.formSection,
+#formHeader,
+#formBox,
+#checkboxSection,
+#nombre-fecha {
+    width: fit-content;
+}
+
+.formSection,
+#separacion,
+#formularioSolicitud,
+main {
+    display: flex;
+}
+
+.formSection,
+#separacion,
+#formularioSolicitud {
+    flex-direction: column;
+}
+
+main {
+    justify-content: center;
+}
+
+#formBox {
+    padding: 2%;
+    padding-top: 1%;
+    background-color: rgba(0, 0, 0, 0.596);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+#formHeader {
+    width: 100%;
+    text-align: center;
+}
+
+.formSection {
+    margin: 3%;
+    margin-right: 3%;
+}
+
+#formHeader {
+    margin-bottom: 4%;
+    font-size: 1.5rem;
+}
+
+.label {
+    font-size: 1rem;
+}
+
+.input {
+    margin-top: 3%;
+    width: 20rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+#checkboxSection {
+    margin-top: 3%;
+    margin-left: 3%;
+    font-size: 0.75rem;
+}
+
+.checkbox {
+    margin-top: 1%;
+}
+
+#buttonField {
+    margin: 3%;
+}
+
+#submitButton {
+    width: 10rem;
+    height: 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+#separacion {
+    margin-right: 3%;
+}
+
+#submitButton:hover {
+    background-color: rgba(53, 53, 53, 0.8);
+}
+
+#nombre-fecha {
+    flex-direction: row;
+}
+
+@media (max-width: 768px) {
+
+    #formularioSolicitud {
+        align-items: center;
+        justify-content: center;
+    }
+
+    #nombre-fecha {
+        flex-direction: column;
+    }
+
+    .formSection {
+        margin: 0;
+    }
+
+    .separacion {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .input,
+    .label,
+    #buttonField {
+        width: 15em;
+        margin-top: 8%;
+    }
+
+    #submitButton {
+        width: 100%;
+    }
+}
