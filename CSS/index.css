@@ -1,111 +1,88 @@
-header{
-    display: block;
-    background-color: transparent;
-    max-width: 100%;
-    box-shadow: none;
-    text-align: center;
-    z-index: 1;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background-image: url(../IMG/linterna.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+
+header {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: block;
 }
-body::before{
-    content: "";
-    background-color: rgba(0, 0, 0, 0.6);
-    position: fixed;
-    top: 0;
-    left: 0;
+
+#logo {
+    margin: 1%;
+    width: 20%;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(0, 5, 19);
+    color: white;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+}
+
+#contenedorImagen {
+    background-size: cover;
+    /* Para que la imagen cubra todo el contenedor */
+    position: relative;
+    /* Necesario para el posicionamiento de los hijos */
+    height: 85vh;
+
+}
+
+#imagenFondo {
+    margin: 0;
+    display: flex;
+    position: absolute;
     width: 100%;
     height: 100%;
+    /* Cambia a 100% para que ocupe todo el contenedor */
     z-index: -1;
+}
 
-}
-#logo{
-    margin: 0;
-    margin-top: 3%;
-}
-main{
-    
-    margin-top: 10%;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 22%;
+.textoEslogan {
+    display: flex;
     justify-content: center;
-    align-items: center;
+    position: relative;
+    color: white;
     z-index: 1;
 }
-section{
-    text-align: center;
+
+.textoDescripcion {
+    display: flex;
 }
-#tituloIndex{
-    font-size: 200%;
-    color: white;
-    text-shadow: 2px 2px 2px black;
-}
-#parrafoIndex{
-    font-size: 150%;
-    color: white;
-    text-shadow: 2px 2px 2px black;
-}
-.contenedorBotonLogin{
-    padding: 1%;
-    padding-left: 1%;
-    padding-right: 1%;
-    margin-top: 5%;
-    border-radius: 10px;
-    background-color: rgb(60, 189, 218);
-    box-shadow: rgb(21, 99, 117);
-}
-#botonLogin{
-    display: block;
-    text-decoration: none;
-    font-size: 30;
+
+#eslogan {
+    position: relative;
+    font-size: 3.5em;
+    /* Usa 'em' para que sea relativo al tamaño base */
     font-weight: bold;
-    color: white;
-    box-sizing: border-box;
-    cursor: pointer;
-}
-
-.imgDispo{
-    width: 100%;
-    height: auto;
-    margin-top: 2%;
-    margin-bottom: 5%;
-    margin-left: 2%;
-    margin-right: 2%;
-
-}
-#textoFooter{
+    font-style: italic;
+    margin: 0;
+    padding-top: 5%;
     color: white;
     text-align: center;
-    font-size: 200%;
-}
-
-#contenedorImgFooter{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    align-items: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-
-#movil{
-    margin: 0;
-    width: 50%;
-}
-#tablet{
-    width: 50%;
-}
-#ordenador{
-    width: 45%;
-}
-footer{ 
-    background-color: rgb(47, 47, 47);
+    /* Centra el texto dentro del contenedor */
     z-index: 1;
-    position:relative;
+}
+
+#contenedorDescripcion {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 35%;
+    width: 40%;
+    justify-content: space-between;
+    gap: 50%;
+}
+
+#enlaceAcceso {
+
 }
