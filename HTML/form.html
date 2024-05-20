@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/estilo.css">
     <link rel="icon" type="image/favicon.ico" href="IMG/Favicon.ico">
+    <link rel="stylesheet" href="../CSS/estilo.css">
     <link rel="stylesheet" href="../CSS/estiloSolicitar.css">
     <title>Solicitud de película</title>
 </head>
@@ -18,31 +18,31 @@
 
 <body>
     <main>
-        <section id="formBox">
-            <section id="formHeader">
-                <h1>Solicitar Nueva Película</h1>
+        <section id="form-box">
+            <section id="title-field">
+                <h1 id="title-text">Solicitar Nueva Película</h1>
             </section>
-            <form id="formularioSolicitud">
 
-                <section class="formSection">
-                    <label for="email" class="label">Correo electrónico de contacto:</label>
-                    <input type="email" name="email" class="input" required>
+            <form id="form-field">
+                <section class="form-section">
+                    <label class="label" for="email">Correo electrónico de contacto:</label>
+                    <input class="input" type="email" name="email" required>
                 </section>
 
-                <section id="nombre-fecha" class="formSection">
-                    <section class="separacion">
-                        <label for="nombrePelicula" class="label">Nombre de la película:</label>
-                        <input type="text" name="nombre-pelicula" class="input" required>
+                <section class="form-section" id="nombre-fecha">
+                    <section class="form-section separacion">
+                        <label class="label" for="nombrePelicula">Nombre de la película:</label>
+                        <input class="input" type="text" name="nombre-pelicula" required>
                     </section>
-                    <section class="separacion">
-                        <label for="añoPelicula" class="label">Año de la película:</label>
-                        <input type="number" name="añoPelicula" class="input" min="0" max="9999" required>
+                    <section class="form-section separacion">
+                        <label class="label" for="añoPelicula">Año de la película:</label>
+                        <input class="input" type="number" name="añoPelicula" min="0" max="9999" required>
                     </section>
                 </section>
 
-                <section class="formSection">
-                    <label for="idiomaPelicula" class="label">Idioma original de la película:</label>
-                    <select name="idiomaPelicula" class="input" required>
+                <section class="form-section">
+                    <label class="label" for="idiomaPelicula">Idioma original de la película:</label>
+                    <select class="input" name="idiomaPelicula" required>
                         <option value="español">Español</option>
                         <option value="alemán">Alemán</option>
                         <option value="chino">Chino</option>
@@ -55,23 +55,23 @@
                     </select>
                 </section>
 
-                <section id="checkboxSection">
-                    <section class="checkbox">
-                        <label>
+                <section class="form-section" id="checkboxSection">
+                    <section>
+                        <label class="label">
                             <input type="checkbox" name="novedadesOfertas" checked>
                             Deseo recibir información sobre novedades y ofertas
                         </label>
                     </section>
 
-                    <section class="checkbox">
-                        <label>
+                    <section>
+                        <label class="label">
                             <input type="checkbox" name="actualizaciones">
                             Deseo recibir actualizaciones y respuesta sobre mi petición a mi correo electrónico
                         </label>
                     </section>
 
-                    <section class="checkbox">
-                        <label>
+                    <section>
+                        <label class="label">
                             <input type="checkbox" name="condiciones" required>
                             Declaro haber leído y acepto las condiciones generales del programa y la normativa sobre
                             protección
@@ -80,25 +80,26 @@
                     </section>
                 </section>
 
-                <section class="formSection" id="buttonField">
-                    <button type="submit" id="submitButton">Enviar</button>
+                <section id="buttonField">
+                    <button id="submitButton" type="submit">Enviar</button>
                 </section>
             </form>
         </section>
     </main>
+
     <script src="../JS/form.js"></script>
 </body>
 
 <footer>
-    <section id="info">
+    <section id="infoFooter">
         <p>Para contactar a la empresa Peliculón S.L, puedes utilizar la siguiente información de contacto:</p>
-        <ul id="infoLista">
-            <li class="dato">Teléfono: 123-456-7890</li>
-            <li class="dato">Correo electrónico: info@peliculon.com</li>
-            <li class="dato">Dirección: Calle Principal, 123, Ciudad Película</li>
+        <ul id="infoListaFooter">
+            <li class="datoFooter">Teléfono: 123-456-7890</li>
+            <li class="datoFooter">Correo electrónico: info@peliculon.com</li>
+            <li class="datoFooter">Dirección: Calle Principal, 123, Ciudad Película</li>
         </ul>
     </section>
-    <h3 id="footer">&copy; PixarTV - Todos los derechos reservados.</h3>
+    <h3 id="footerCopyrigth">&copy; PixarTV - Todos los derechos reservados.</h3>
 </footer>
 
 </html>

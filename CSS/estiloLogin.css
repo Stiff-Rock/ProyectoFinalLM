@@ -1,8 +1,7 @@
 html {
-    background-image: url(https://i.pinimg.com/originals/0f/4a/57/0f4a575203437d7facbdb77f4b47296e.jpg);
+    background-image: url("../IMG/login-background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
 }
 
 body {
@@ -18,32 +17,14 @@ header {
     justify-content: center;
 }
 
-#info {
-    padding: 1%;
-    padding-bottom: 0%;
-    padding-top: 0%;
-
-}
-
-#infoLista {
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 1%;
-}
-
-.dato {
-    margin: 0%;
-    margin-right: 3%;
-}
-
 #headerSection {
     text-align: center;
-    margin:  0%;
+    margin: 0%;
     width: 100%;
 }
 
 #headerClickables {
-    margin:  0%;
+    margin: 0%;
     width: 100%
 }
 
@@ -61,7 +42,7 @@ main {
     width: fit-content;
     background-color: rgba(0, 0, 0, 0.596);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
-    padding: 3%;
+    padding: 2%;
     margin-bottom: 6%;
 }
 
@@ -106,7 +87,8 @@ main {
 }
 
 #loginError {
-    color: transparent;
+    visibility: hidden;
+    color: red;
     margin: 0%;
     text-align: left;
 }
