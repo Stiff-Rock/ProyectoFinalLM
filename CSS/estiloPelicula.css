@@ -23,8 +23,17 @@ main {
     flex-direction: column;
 }
 
-#trailer-section {
+#peli-portada-section {
+    width: fit-content;
     margin-right: 2em;
+}
+
+#peli-portada {
+    border-radius: 1em;
+    width: 15em;
+}
+
+#trailer-section {
     margin-bottom: 0;
     display: flex;
 }
@@ -41,23 +50,15 @@ main {
     margin-top: 0;
 }
 
-#peli-portada-section {
-    width: fit-content;
-}
-
-#peli-portada {
-    border-radius: 1em;
-    width: 15em;
-}
-
 #trailer-button {
     background-color: rgb(54, 54, 54);
     border: none;
     border-radius: 0.5em;
-    padding: 0.5em 1em;
     font-size: 1em;
     margin-top: 1em;
     cursor: pointer;
+    width: 15em;
+    height: 2em;
     transition: background-color 0.3s ease;
 }
 
@@ -69,6 +70,15 @@ a {
     text-decoration: none;
     color: rgb(218, 218, 218);
 }
+
+#trailer-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .peli-info {
     display: flex;
