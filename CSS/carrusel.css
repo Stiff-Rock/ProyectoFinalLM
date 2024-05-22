@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+.propiedad {
+    width: 100%;
+    height: 100%;
+}
+
+.boton {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 0.31rem; /* 5px */
+    padding: 0.93rem 1.87rem; /* 15px 30px */
+    color: #fff;
+    margin-right: 1.25rem; /* 20px */
+    cursor: pointer;
+    transition: 0.3s ease all;
+    font-size: 1.12rem; /* 18px */
+}
+
+.boton:hover {
+    background: #fff;
+    color: #f1e7e7;
+}
+
+.boton {
+    margin-right: 1.25rem; /* 20px */
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    background: #2c3e50;
+}
+
+.mySlider {
+    height: 40.94rem; /* 655px */
+    display: none;
+    overflow: hidden;
+    display: block;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 3.13rem; /* 50px */
+    padding: 0.94rem; /* 15px */
+    cursor: pointer;
+    color: #fff;
+    transition: 0.1s;
+    user-select: none;
+}
+
+.prev:hover,
+.next:hover {
+    color: #3498db;
+}
+
+.next {
+    right: 0;
+}
+
+.dotsbox {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 1.25rem; /* 20px */
+    cursor: pointer;
+    text-align: center;
+}
+
+.dot {
+    display: inline-block;
+    width: 0.94rem; /* 15px */
+    height: 0.94rem; /* 15px */
+    border: 0.19rem solid #fff; /* 3px */
+    border-radius: 50%;
+    margin: 0 0.63rem; /* 10px */
+    cursor: pointer;
+}
+
+.active, .dot:hover {
+    border-color: #3498db;
+}
+
+.txt {
+    position: absolute;
+    color: #fff;
+    letter-spacing: 0.13rem; /* 2px */
+    line-height: 2.19rem; /* 35px */
+    top: 60%;
+    left: 5%;
+    z-index: 1;
+}
+
+.txt h1 {
+    color: #3498db;
+    font-weight: bold;
+    margin: 1.25rem; /* 20px */
+}
+
+.txt p {
+    font-weight: bold;
+    font-size: 1.25rem; /* 20px */
+}
+
+@media (max-width: 50rem) { /* 800px */
+    .mySlider {
+        height: 31.25rem; /* 500px */
+    }
+
+    .txt {
+        line-height: 1.56rem; /* 25px */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .txt h1 {
+        font-size: 2.5rem; /* 40px */
+    }
+
+    .txt p {
+        font-size: 0.81rem; /* 13px */
+    }
+}
+
+@media screen and (max-width: 32.5rem) { /* 520px */
+    .txt h1 {
+        font-size: 1.88rem; /* 30px */
+    }
+}
