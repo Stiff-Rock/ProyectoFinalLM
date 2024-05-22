@@ -24,8 +24,12 @@ main {
 }
 
 #peli-portada-section {
-    width: fit-content;
+    display: flex;
+    width: 20em;
     margin-right: 2em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #peli-portada {
@@ -46,7 +50,7 @@ main {
 
 #peli-title {
     font-size: 2.5em;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
     margin-top: 0;
 }
 
@@ -122,6 +126,69 @@ h3 {
 #peli-sinopsis {
     text-align: left;
     width: 30em;
+}
+
+#peli-recomendados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+#carrusel-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#carrusel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portada-recomendacion {
+    width: 10em;
+    border-radius: 1em;
+}
+
+.peli-recomendada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10em;
+    margin: 0 1em 0 1em;
+    transition: transform 0.3s ease;
+}
+
+.peli-recomendada:hover {
+    transform: scale(1.1);
+}
+
+.icono-slider {
+    width: 2em;
+    height: 2em;
+    padding: 0.5em;
+}
+
+#carrusel-anterior,
+#carrusel-siguiente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(54, 54, 54);
+    border: none;
+    border-radius: 3em;
+    cursor: pointer;
+    width: fit-content;
+    transition: background-color 0.3s ease;
+}
+
+#carrusel-anterior:hover,
+#carrusel-siguiente:hover {
+    background-color: rgb(34, 34, 34);
 }
 
 @media (max-width: 768px) {

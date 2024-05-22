@@ -1,4 +1,5 @@
 let movieIndex = 0;
+//localStorage.getItem("movieIndex")
 
 function loadMovie() {
     var title = document.getElementById("peli-title");
@@ -12,14 +13,15 @@ function loadMovie() {
 
     var pelicula = peliculas[movieIndex];
 
+    document.title = "Película - " + pelicula[0];
     title.textContent = pelicula[0];
     link.href = pelicula[1];
     trailer.src = pelicula[1];
     cover.src = pelicula[2];
-    fecha.textContent = pelicula[3];
-    director.textContent = pelicula[4];
-    valoracion.textContent = pelicula[5];
-    sinopsis.textContent = pelicula[6];
+    fecha.textContent = pelicula[4];
+    director.textContent = pelicula[5];
+    valoracion.textContent = pelicula[6];
+    sinopsis.textContent = pelicula[7];
 }
 
 loadMovie()

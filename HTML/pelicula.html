@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/favicon.ico" href="../IMG/favicon.ico">
     <link rel="stylesheet" href="../CSS/estilo.css">
     <link rel="stylesheet" href="../CSS/estiloPelicula.css">
     <link rel="icon" type="image/favicon.ico" href="IMG/Favicon.ico">
-    <title>PELICULA</title>
-    <!-- Cambiar titulo en funcion de la peli en la que se encuentre-->
+    <title>Película</title>
 </head>
 
 <header>
@@ -23,17 +23,16 @@
 
             <section id="peli-cabecera">
                 <section id="peli-portada-section">
-                    <h1 id="peli-title">Toy Story 4</h1>
-                    <img id="peli-portada" src="../IMG/toy4.jpg" alt="Toy Story 4">
+                    <h1 id="peli-title">Título</h1>
+                    <img id="peli-portada" src="" alt="Portada de la película">
                     <section id="trailer-button">
-                        <a id="trailer-link" href="https://youtu.be/hnl5hQaMpks?si=K9_XXJpIVQ_aXssI" target="_blank">Ver trailer</a>
+                        <a id="trailer-link" href="https://youtu.be/hnl5hQaMpks?si=K9_XXJpIVQ_aXssI" target="_blank">Ver
+                            trailer</a>
                     </section>
                 </section>
 
                 <section class="info-section" id="trailer-section">
-                    <iframe id="peli-trailer"
-                        src="https://www.youtube.com/embed/hnl5hQaMpks?si=Sts66BVr1uprraYx&autoplay=1&mute=1"
-                        title="YouTube video player" frameborder="0"
+                    <iframe id="peli-trailer" src="" title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </section>
@@ -62,26 +61,31 @@
 
                 <aside class="peli-info">
                     <h2 id="info-header">Sinopsis:</h2>
-                    <p id="peli-sinopsis">Woody siempre ha tenido claro cuál es su labor en el mundo y cuál es su
-                        prioridad: cuidar a su dueño, ya sea Andy o Bonnie. Sin embargo, Woody descubrirá lo grande que
-                        puede ser el mundo para un juguete cuando Forky se convierta en su nuevo compañero de
-                        habitación. Los juguetes se embarcarán en una aventura de la que no se olvidarán jamás.</p>
+                    <p id="peli-sinopsis"></p>
                 </aside>
             </section>
 
             <section id="peli-recomendados">
                 <h2>Otras recomendaciones:</h2>
-                <p>FotoFotoFotoFotoFotoFotoFotoFotoFotoFotoFoto</p>
-                <p>FotoFotoFotoFotoFotoFotoFotoFotoFotoFotoFoto</p>
-                <p>FotoFotoFotoFotoFotoFotoFotoFotoFotoFotoFoto</p>
-                <p>FotoFotoFotoFotoFotoFotoFotoFotoFotoFotoFoto</p>
-                <p>FotoFotoFotoFotoFotoFotoFotoFotoFotoFotoFoto</p>
-                <p>FotoFotoFotoFotoFotoFotoFotoFotoFotoFotoFoto</p>
+                <section id="carrusel-section">
+                    <section id="carrusel-anterior">
+                        <img src="../IMG/arrow-left.svg" alt="Flecha izquierda" class="icono-slider"
+                            onclick="prevSlide()">
+                    </section>
+                    <section id="carrusel">
+
+                    </section>
+                    <section id="carrusel-siguiente">
+                        <img src="../IMG/arrow-right.svg" alt="Flecha derecha" class="icono-slider"
+                            onclick="nextSlide()">
+                    </section>
+                </section>
             </section>
         </section>
     </main>
     <script src="../JS/listapeliculas.js"></script>
     <script src="../JS/pelicula.js"></script>
+    <script src="../JS/peliculaCarrusel.js"></script>
 </body>
 
 <footer>
