@@ -21,7 +21,7 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
         window.location.href = "menu.html";
     } else {
         event.preventDefault();
-        errorMessage.style.color = "red";
+        errorMessage.style.visibility = "visible";
         return false;
     }
 });

@@ -61,7 +61,25 @@ footer {
     background-color: rgba(20, 19, 24, 0.9);
 }
 
-#footer {
+#infoFooter {
+    padding: 1%;
+    padding-bottom: 0%;
+    padding-top: 0%;
+
+}
+
+#infoListaFooter {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 1%;
+}
+
+.datoFooter {
+    margin: 0%;
+    margin-right: 3%;
+}
+
+#footerCopyrigth {
     margin-left: 1%;
 }
 
@@ -107,5 +125,9 @@ footer {
 
     footer {
         font-size: 70%;
+    }
+
+    #infoFooter {
+        display: none;
     }
 }
