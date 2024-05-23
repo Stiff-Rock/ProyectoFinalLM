@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/favicon.ico" href="../IMG/favicon.ico">
     <link rel="stylesheet" href="../CSS/estilo.css">
+    <link rel="stylesheet" href="../CSS/estiloPelicula.css">
     <link rel="icon" type="image/favicon.ico" href="IMG/Favicon.ico">
-    <title><!-- Cambiar en funcion de la peli en la que se encuentre--> PELICULA</title>
+    <title>Película</title>
 </head>
 
 <header>
@@ -17,10 +19,85 @@
 
 <body>
     <main>
+        <section id="peli-page">
 
+            <section id="peli-cabecera">
+                <section id="peli-portada-section">
+                    <h1 id="peli-title">Título</h1>
+                    <img id="peli-portada" src="" alt="Portada de la película">
+                    <section id="trailer-button">
+                        <a id="trailer-link" href="https://youtu.be/hnl5hQaMpks?si=K9_XXJpIVQ_aXssI" target="_blank">Ver
+                            trailer</a>
+                    </section>
+                </section>
+
+                <section class="info-section" id="trailer-section">
+                    <iframe id="peli-trailer" src="" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </section>
+            </section>
+
+            <section id="peli-cuerpo">
+                <aside class="peli-info">
+                    <h2 id="info-header">Información de la película:</h2>
+                    <article id="contenedor-detalles">
+                        <section id="fila-info">
+                            <section class="info-section">
+                                <h3>Año de estreno:</h3>
+                                <p id="peli-estreno">Año</p>
+                            </section>
+                            <section class="info-section" id="info-director-section">
+                                <h3>Director:</h3>
+                                <p id="peli-director">Director</p>
+                            </section>
+                        </section>
+                        <section class="info-section">
+                            <h3>Valoracion en IMDB:</h3>
+                            <p id="peli-valoracion">0/10</p>
+                        </section>
+                    </article>
+                </aside>
+
+                <aside class="peli-info">
+                    <h2 id="info-header">Sinopsis:</h2>
+                    <p id="peli-sinopsis"></p>
+                </aside>
+            </section>
+
+            <section id="peli-recomendados">
+                <h2>Otras recomendaciones:</h2>
+                <section id="carrusel-section">
+                    <section id="carrusel-anterior">
+                        <img src="../IMG/arrow-left.svg" alt="Flecha izquierda" class="icono-slider"
+                            onclick="prevSlide()">
+                    </section>
+                    <section id="carrusel">
+
+                    </section>
+                    <section id="carrusel-siguiente">
+                        <img src="../IMG/arrow-right.svg" alt="Flecha derecha" class="icono-slider"
+                            onclick="nextSlide()">
+                    </section>
+                </section>
+            </section>
+        </section>
     </main>
+    <script src="../JS/listapeliculas.js"></script>
+    <script src="../JS/pelicula.js"></script>
+    <script src="../JS/peliculaCarrusel.js"></script>
 </body>
-    <footer>
-        <h3>&copy; NOMBREEE</h3>
-    </footer>
+
+<footer>
+    <section id="infoFooter">
+        <p>Para contactar a la empresa Peliculón S.L, puedes utilizar la siguiente información de contacto:</p>
+        <ul id="infoListaFooter">
+            <li class="datoFooter">Teléfono: 123-456-7890</li>
+            <li class="datoFooter">Correo electrónico: info@peliculon.com</li>
+            <li class="datoFooter">Dirección: Calle Principal, 123, Ciudad Película</li>
+        </ul>
+    </section>
+    <h3 id="footerCopyrigth">&copy; PixarTV - Todos los derechos reservados.</h3>
+</footer>
+
 </html>
