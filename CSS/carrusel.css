@@ -12,24 +12,22 @@
 
 .boton {
     background: rgba(0, 0, 0, 0.5);
-    border: none;
+
     border-radius: 0.31rem; /* 5px */
-    padding: 0.93rem 1.87rem; /* 15px 30px */
+    padding: 1rem 0.5rem; /* 15px 30px */
     color: #fff;
-    margin-right: 1.25rem; /* 20px */
+    margin-right: 1rem; /* 20px */
     cursor: pointer;
     transition: 0.3s ease all;
-    font-size: 1.12rem; /* 18px */
+    font-size: 0.9rem; /* 18px */
+    display: block;
 }
 
 .boton:hover {
-    background: #fff;
+    background: #423d3d;
     color: #f1e7e7;
 }
 
-.boton {
-    margin-right: 1.25rem; /* 20px */
-}
 
 .slider {
     position: relative;
@@ -94,9 +92,12 @@
     color: #fff;
     letter-spacing: 0.13rem; /* 2px */
     line-height: 2.19rem; /* 35px */
-    top: 60%;
-    left: 5%;
+    top: 57%;
+    left: 4%;
     z-index: 1;
+    background-color: rgba(0, 0, 0, 0.474);
+    border-radius: 10px;
+    padding: 0.1rem;
 }
 
 .txt h1 {
@@ -107,32 +108,29 @@
 
 .txt p {
     font-weight: bold;
-    font-size: 1.25rem; /* 20px */
+    font-size: 0.9rem; /* 20px */
 }
 
-@media (max-width: 50rem) { /* 800px */
+@media (max-width: 768px) { /* 800px */
     .mySlider {
         height: 31.25rem; /* 500px */
     }
 
     .txt {
-        line-height: 1.56rem; /* 25px */
+        line-height: 1rem; /* 25px */
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0);
     }
 
     .txt h1 {
-        font-size: 2.5rem; /* 40px */
+        display: none;
     }
 
     .txt p {
-        font-size: 0.81rem; /* 13px */
+        display: none;
     }
 }
 
-@media screen and (max-width: 32.5rem) { /* 520px */
-    .txt h1 {
-        font-size: 1.88rem; /* 30px */
-    }
-}
+
