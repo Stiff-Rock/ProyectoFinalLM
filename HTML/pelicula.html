@@ -7,14 +7,35 @@
     <link rel="icon" type="image/favicon.ico" href="../IMG/favicon.ico">
     <link rel="stylesheet" href="../CSS/estilo.css">
     <link rel="stylesheet" href="../CSS/estiloPelicula.css">
+    <link rel="stylesheet" href="../CSS/nav.css">
     <link rel="icon" type="image/favicon.ico" href="IMG/Favicon.ico">
     <title>Película</title>
 </head>
 
 <header>
-    <nav>
-
-    </nav>
+    <section id="headerSection">
+        <section id="headerClickables">
+            <section class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </section>
+            <a id="logoLink" href="index.html">
+                <img id="logo" src="../IMG/logo.svg" alt="Logo de pixar">
+            </a>
+            
+        </section>
+        <section class="section-nav">
+            <ul class="section-menu">
+                <li class="section-item">
+                    <a href="menu.html" class="nav-link textoNav">Menu</a>
+                </li>
+                <li class="section-item">
+                    <a href="form.html" class="nav-link textoNav">Solicitar</a>
+                </li>
+            </ul>
+        </section>
+    </section>
 </header>
 
 <body>
@@ -86,6 +107,7 @@
     <script src="../JS/listapeliculas.js"></script>
     <script src="../JS/pelicula.js"></script>
     <script src="../JS/peliculaCarrusel.js"></script>
+    <script src="../JS/nav.js"></script>
 </body>
 
 <footer>
@@ -97,7 +119,7 @@
             <li class="datoFooter">Dirección: Calle Principal, 123, Ciudad Película</li>
         </ul>
     </section>
-    <h3 id="footerCopyrigth">&copy; PixarTV - Todos los derechos reservados.</h3>
+    <h3 id="footerCopyrigth">&copy; Pixar - Todos los derechos reservados.</h3>
 </footer>
 
 </html>

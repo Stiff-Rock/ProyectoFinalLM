@@ -52,23 +52,10 @@ document.addEventListener('DOMContentLoaded', () => {
         dot[counter - 1].classList.add('active');
     }
 
-    // Attach event listeners
+    
     document.querySelector('.prev').addEventListener('click', () => plusSlides(-1));
     document.querySelector('.next').addEventListener('click', () => plusSlides(1));
     dot.forEach((dotElement, index) => {
         dotElement.addEventListener('click', () => currentSlide(index + 1));
     });
 });
-
-const hamburger = document.querySelector(".hamburger");
-const sectionMenu = document.querySelector(".section-menu");
-
-hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    sectionMenu.classList.toggle("active");
-});
-
-document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    sectionMenu.classList.remove("active");
-}));

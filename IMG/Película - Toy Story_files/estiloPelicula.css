@@ -1,40 +1,15 @@
-/*SECCION DE CSS COMÚN*/
-
 main {
     display: flex;
     justify-content: center;
 }
 
 #peli-page {
-    width: 80%;
-    height: auto;
     text-align: center;
+    width: fit-content;
     background-color: rgba(0, 0, 0, 0.596);
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
-    padding: 3rem;
+    padding: 3em;
 }
-
-.info-section {
-    display: flex;
-    margin-bottom: 1%;
-    flex-direction: column;
-}
-
-h3 {
-    font-weight: lighter;
-    font-size: 1.5rem;
-    margin-bottom: 0;
-    color: rgb(218, 218, 218);
-}
-
-a {
-    text-decoration: none;
-    color: rgb(218, 218, 218);
-}
-
-
-
-/*SECCIÓN DE CABECERA*/
 
 #peli-cabecera {
     display: flex;
@@ -42,32 +17,35 @@ a {
     justify-content: center;
 }
 
+.info-section {
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: column;
+}
 
 #peli-portada-section {
-    width: fit-content;
     display: flex;
-    margin-right: 3%;
+    width: 20em;
+    margin-right: 2em;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 #peli-portada {
-    border-radius: 1rem;
-    width: 15rem;
+    border-radius: 1em;
+    width: 15em;
 }
 
 #trailer-section {
-    display: flex;
     margin-bottom: 0;
-    width: 100%;
-    height: auto;
+    display: flex;
 }
 
 #peli-trailer {
-    width: 100%;
-    height: 100%;
-    border-radius: 2rem;
+    width: 907px;
+    height: 510px;
+    border-radius: 2em;
 }
 
 #peli-title {
@@ -80,16 +58,21 @@ a {
     background-color: rgb(54, 54, 54);
     border: none;
     border-radius: 0.5em;
-    font-size: 1rem;
-    margin-top: 1rem;
+    font-size: 1em;
+    margin-top: 1em;
     cursor: pointer;
-    width: 15rem;
-    height: 2rem;
+    width: 15em;
+    height: 2em;
     transition: background-color 0.3s ease;
 }
 
 #trailer-button:hover {
     background-color: rgb(34, 34, 34);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(218, 218, 218);
 }
 
 #trailer-link {
@@ -101,16 +84,20 @@ a {
 }
 
 
-
-/*SECCIÓN DE CUERPO*/
-
 .peli-info {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 30em;
     background-color: rgba(0, 0, 0, 0.425);
     border-radius: 2rem;
     padding: 2rem;
+}
+
+h3 {
+    font-weight: lighter;
+    font-size: 20px;
+    margin-bottom: 0;
+    color: rgb(218, 218, 218);
 }
 
 #info-header {
@@ -128,54 +115,42 @@ a {
     justify-content: center;
 }
 
+
 #fila-info {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 8rem;
-}
-
-#info-director-section {
-    width: 100%;
+    gap: 8em;
 }
 
 #peli-sinopsis {
     text-align: left;
-    width: 100%;
+    width: 30em;
 }
-
-
-
-/*SECCIÓN DE CARRUSEL*/
 
 #peli-recomendados {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: auto;
+    margin-top: 5%;
 }
 
 #carrusel-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: auto;
 }
 
 #carrusel {
     display: flex;
-    width: fit-content;
-    height: auto;
     justify-content: center;
     align-items: center;
 }
 
 .portada-recomendacion {
-    width: 100%;
-    border-radius: 1rem;
+    width: 10em;
+    border-radius: 1em;
 }
 
 .peli-recomendada {
@@ -183,13 +158,19 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    margin: 0 1rem 0 1rem;
+    width: 10em;
+    margin: 0 1em 0 1em;
     transition: transform 0.3s ease;
 }
 
 .peli-recomendada:hover {
     transform: scale(1.1);
+}
+
+.icono-slider {
+    width: 2em;
+    height: 2em;
+    padding: 0.5em;
 }
 
 #carrusel-anterior,
@@ -199,7 +180,7 @@ a {
     align-items: center;
     background-color: rgb(54, 54, 54);
     border: none;
-    border-radius: 3rem;
+    border-radius: 3em;
     cursor: pointer;
     width: fit-content;
     transition: background-color 0.3s ease;
@@ -210,25 +191,11 @@ a {
     background-color: rgb(34, 34, 34);
 }
 
-.icono-slider {
-    width: 2rem;
-    height: 2rem;
-    padding: 0.5rem;
-}
-
-
-/*MEDIA QUERY*/
-
 @media (max-width: 768px) {
     #trailer-section {
-        height: 20rem;
+        display: none;
     }
 
-    #trailer-button {
-        width: 100%;
-    }
-
-    /*ARREGLAAR INFO SINPSOS Y OTRR*/
     #peli-page {
         text-align: center;
         width: fit-content;
