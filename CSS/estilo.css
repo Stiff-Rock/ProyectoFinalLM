@@ -20,8 +20,6 @@ header {
     margin-bottom: 1%;
 }
 
-
-
 #separator {
     display: inline-flex;
 }
@@ -32,15 +30,11 @@ main {
 
 footer {
     font-size: 80%;
-    padding: 0.1%;
     background-color: rgba(20, 19, 24, 0.9);
 }
 
 #infoFooter {
-    padding: 1%;
-    padding-bottom: 0%;
-    padding-top: 0%;
-
+    padding:  0 1% 0 1%;
 }
 
 #infoListaFooter {

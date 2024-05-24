@@ -12,13 +12,17 @@
 
 .boton {
     background: rgba(0, 0, 0, 0.5);
-    border-radius: 0.31rem; /* 5px */
-    padding: 1rem 0.5rem; /* 15px 30px */
+    border-radius: 0.31rem;
+    /* 5px */
+    padding: 1rem 0.5rem;
+    /* 15px 30px */
     color: #fff;
-    margin-right: 1rem; /* 20px */
+    margin-right: 1rem;
+    /* 20px */
     cursor: pointer;
     transition: 0.3s ease all;
-    font-size: 0.9rem; /* 18px */
+    font-size: 0.9rem;
+    /* 18px */
     display: block;
 }
 
@@ -35,7 +39,8 @@
 }
 
 .mySlider {
-    height: 40.94rem; /* 655px */
+    height: 40.94rem;
+    /* 655px */
     display: none;
     overflow: hidden;
     display: block;
@@ -46,8 +51,10 @@
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
-    font-size: 3.13rem; /* 50px */
-    padding: 0.94rem; /* 15px */
+    font-size: 3.13rem;
+    /* 50px */
+    padding: 0.94rem;
+    /* 15px */
     cursor: pointer;
     color: #fff;
     transition: 0.1s;
@@ -67,30 +74,38 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    bottom: 1.25rem; /* 20px */
+    bottom: 1.25rem;
+    /* 20px */
     cursor: pointer;
     text-align: center;
 }
 
 .dot {
     display: inline-block;
-    width: 0.94rem; /* 15px */
-    height: 0.94rem; /* 15px */
-    border: 0.19rem solid #fff; /* 3px */
+    width: 0.94rem;
+    /* 15px */
+    height: 0.94rem;
+    /* 15px */
+    border: 0.19rem solid #fff;
+    /* 3px */
     border-radius: 50%;
-    margin: 0 0.63rem; /* 10px */
+    margin: 0 0.63rem;
+    /* 10px */
     cursor: pointer;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
     border-color: #3498db;
 }
 
 .txt {
     position: absolute;
     color: #fff;
-    letter-spacing: 0.13rem; /* 2px */
-    line-height: 2.19rem; /* 35px */
+    letter-spacing: 0.13rem;
+    /* 2px */
+    line-height: 2.19rem;
+    /* 35px */
     top: 57%;
     left: 4%;
     z-index: 1;
@@ -102,21 +117,47 @@
 .txt h1 {
     color: #3498db;
     font-weight: bold;
-    margin: 1.25rem; /* 20px */
+    margin: 1.25rem;
+    /* 20px */
 }
 
 .txt p {
     font-weight: bold;
-    font-size: 0.9rem; /* 20px */
+    font-size: 0.9rem;
+    /* 20px */
 }
 
-@media (max-width: 768px) { /* 800px */
+#tarjetas-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.peli-recomendada {
+    padding: 1%;
+    transition: 0.3s;
+}
+
+.peli-recomendada:hover {
+    transform: scale(1.1);
+}
+
+.portada-recomendacion {
+    width: 10vw;
+    height: auto;
+    border-radius: 1rem;
+}
+
+
+@media (max-width: 768px) {
     .mySlider {
-        height: 31.25rem; /* 500px */
+        height: 31.25rem;
+        /* 500px */
     }
 
     .txt {
-        line-height: 1rem; /* 25px */
+        line-height: 1rem;
+        /* 25px */
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -130,7 +171,5 @@
     .txt p {
         display: none;
     }
-  
+
 }
-
-

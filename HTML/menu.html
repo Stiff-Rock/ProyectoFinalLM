@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="../CSS/estilo.css">
     <link rel="stylesheet" href="../CSS/nav.css">
     <link rel="stylesheet" href="../CSS/carrusel.css">
-
-    <link rel="icon" type="image/favicon.ico" href="IMG/Favicon.ico">
+    <link rel="icon" type="image/favicon.ico" href="../IMG/favicon.ico">
     <title>Menu</title>
 </head>
 
@@ -23,7 +22,7 @@
             <a id="logoLink" href="index.html">
                 <img id="logo" src="../IMG/logo.svg" alt="Logo de pixar">
             </a>
-            
+
         </section>
         <section class="section-nav">
             <ul class="section-menu">
@@ -42,36 +41,37 @@
     <main>
         <section class="slider">
             <!--cambiar slide-->
+            <!--NO PUEDES PONER LA ETIQUIETA STYLE AQUÍ, LO TIENES QUE HACER DESDE CSS-->
             <section class="mySlider" style="display: block;">
                 <section class="txt">
                     <h1>Wall_E</h1>
                     <p>En Wall-E, un robot solitario encuentra una planta en<br>
                         una Tierra desolada y se embarca en una misión para<br> salvar a la humanidad con su compañera
                         robot, Eve.</p>
-                        <button role="button" class="boton">Mas Informacion</button>
-                    </section>
-                    <img src="../IMG/Walle.png" class="propiedad" alt="Imagen 1">
+                    <button role="button" class="boton" id="masInfo1">Mas Informacion</button>
                 </section>
+                <img src="../IMG/Walle.png" class="propiedad" alt="Portada Wall-E">
+            </section>
             <section class="mySlider">
                 <section class="txt">
                     <h1>Ratatouille</h1>
                     <p>En Ratatouille, un ratón llamado Remy ayuda en la<br>
                         cocinade un restaurante parisino mientras sigue su<br>
                         sueño de convertirse en chef.</p>
-                        <button role="button" class="boton">Mas Informacion</button>
-                    </section>
-                    <img src="../IMG/ratatouille.png" class="propiedad" alt="Imagen 2">
+                    <button role="button" class="boton" id="masInfo2">Mas Informacion</button>
                 </section>
-                <section class="mySlider">
-                    <section class="txt">
-                        <h1>Elementos</h1>
-                        <p>
-                            En Elementos, cuatro amigos descubren que son <br>
-                            descendientes de poderosos seres mágicos y <br>
-                            deben unir fuerzas para proteger el mundo.</p>
-                            <button role="button" class="boton">Mas Informacion</button>
+                <img src="../IMG/ratatouille.png" class="propiedad" alt="Portada Ratatouille">
+            </section>
+            <section class="mySlider">
+                <section class="txt">
+                    <h1>Elementos</h1>
+                    <p>
+                        En Elementos, cuatro amigos descubren que son <br>
+                        descendientes de poderosos seres mágicos y <br>
+                        deben unir fuerzas para proteger el mundo.</p>
+                    <button role="button" class="boton" id="masInfo3">Mas Informacion</button>
                 </section>
-                <img src="../IMG/elemtos.jpeg" class="propiedad" alt="Imagen 3">
+                <img src="../IMG/elemtos.jpeg" class="propiedad" alt="Portada Elemental">
             </section>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -81,9 +81,14 @@
                 <span class="dot" onclick="currentSlide(3)"></span>
             </section>
         </section>
+        <section id="tarjetas-section">
+
+        </section>
     </main>
+    <script defer src="../JS/listapeliculas.js"></script>
     <script defer src="../JS/nav.js"></script>
     <script defer src="../JS/carrusel.js"></script>
+    <script defer src="../JS/enlaceMenuPeli.js"></script>
 </body>
 <footer>
     <section id="infoFooter">

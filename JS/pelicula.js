@@ -1,7 +1,5 @@
-let movieIndex = 0;
-//localStorage.getItem("movieIndex")
-
 function loadMovie() {
+    // Obtiene los elementos de la página.
     var title = document.getElementById("peli-title");
     var cover = document.getElementById("peli-portada");
     var link = document.getElementById("trailer-link");
@@ -11,8 +9,11 @@ function loadMovie() {
     var valoracion = document.getElementById("peli-valoracion");
     var sinopsis = document.getElementById("peli-sinopsis");
 
+    // Selecciona el índice de la película a mostrar del alamacenamiento interno.
+    var movieIndex = localStorage.getItem("movieIndex");
     var pelicula = peliculas[movieIndex];
 
+    // Cambia la información de la página en función de la película seleccionada.
     document.title = "Película - " + pelicula[0];
     title.textContent = pelicula[0];
     link.href = pelicula[1];
@@ -24,4 +25,6 @@ function loadMovie() {
     sinopsis.textContent = pelicula[6];
 }
 
-loadMovie()
+document.addEventListener('DOMContentLoaded', function() {
+    loadMovie();
+});

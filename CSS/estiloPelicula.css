@@ -16,14 +16,14 @@ main {
 
 .info-section {
     display: flex;
-    margin-bottom: 1%;
     flex-direction: column;
+    width: 90%;
+    font-size: 95%;
 }
 
 h3 {
     font-weight: lighter;
-    font-size: 1.5rem;
-    margin-bottom: 0;
+    font-size: 120%;
     color: rgb(218, 218, 218);
 }
 
@@ -31,7 +31,6 @@ a {
     text-decoration: none;
     color: rgb(218, 218, 218);
 }
-
 
 
 /*SECCIÓN DE CABECERA*/
@@ -60,7 +59,7 @@ a {
 #trailer-section {
     display: flex;
     margin-bottom: 0;
-    width: 100%;
+    width: 50vw;
     height: auto;
 }
 
@@ -104,39 +103,52 @@ a {
 
 /*SECCIÓN DE CUERPO*/
 
+#peli-cuerpo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
 .peli-info {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 30%;
     background-color: rgba(0, 0, 0, 0.425);
     border-radius: 2rem;
-    padding: 2rem;
+    padding: 3%;
+}
+
+#info-izquierda {
+    margin-right: 3%;
+
+}
+
+#info-derecha {
+    margin-left: 3%;
 }
 
 #info-header {
     margin-bottom: 2%;
+    font-size: 130%;
 }
 
-#peli-cuerpo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 5%;
+.info-title {
+    margin-bottom: 0;
 }
 
 #contenedor-detalles {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #fila-info {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 8rem;
-}
-
-#info-director-section {
-    width: 100%;
+    gap: 10%;
 }
 
 #peli-sinopsis {
@@ -183,7 +195,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 10vw;
     margin: 0 1rem 0 1rem;
     transition: transform 0.3s ease;
 }
@@ -211,8 +223,8 @@ a {
 }
 
 .icono-slider {
-    width: 2rem;
-    height: 2rem;
+    width: 2vw;
+    height: 2vw;
     padding: 0.5rem;
 }
 
@@ -220,38 +232,62 @@ a {
 /*MEDIA QUERY*/
 
 @media (max-width: 768px) {
+
+    #peli-cabecera {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     #trailer-section {
-        height: 20rem;
+        height: 50vw;
     }
 
     #trailer-button {
         width: 100%;
     }
 
-    /*ARREGLAAR INFO SINPSOS Y OTRR*/
-    #peli-page {
-        text-align: center;
-        width: fit-content;
-        background-color: transparent;
-        box-shadow: none;
-        padding: 3%;
-    }
-
-    #peli-page {
-        width: 60%;
-        padding: 5%;
-    }
-
-    #peli-cabecera {
-        flex-direction: column;
-    }
-
     #peli-portada-section {
+        width: 100%;
         margin-right: 0;
-        margin-bottom: 2%;
+        margin-bottom: 5%;
     }
 
     #peli-portada {
+        width: 70%;
+    }
+
+    #peli-cuerpo {
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+    }
+
+    #info-izquierda,
+    #info-derecha {
+        margin: 0;
+    }
+
+    #info-izquierda {
+        margin-bottom: 5%;
+    }
+
+    .peli-info {
         width: 100%;
+        padding: 5%;
+    }
+
+    #carrusel-anterior,
+    #carrusel-siguiente {
+        display: none;
+    }
+
+    .peli-recomendada {
+        margin: 0 0.5rem 0 0.5rem;
+        width: 30vw;
+    }
+
+    .portada-exceso {
+        display: none;
     }
 }
