@@ -20,41 +20,47 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     const tarjetasSection = document.getElementById('tarjetas-section');
-    tarjetasSection.innerHTML = '';
 
     // Obtener índices aleatorios de películas
-    const randomMovieIndexes = [];
-    for (let i = 0; i < 4; i++) {
-        let isRepeated = false;
-        while (!isRepeated) {
-            let randomIndex = Math.floor(Math.random() * peliculas.length);
-            if (!randomMovieIndexes.includes(randomIndex)) {
-                randomMovieIndexes.push(randomIndex);
-                isRepeated = true;
-            }
+    const usedIndexes = new Set(); // Usamos un Set para almacenar los índices ya utilizados
+
+    for (let j = 0; j < 4; j++) {
+        const randomMovieIndexes = []; // Reiniciamos el array para cada sección
+        for (let i = 0; i < 6; i++) {
+            let isRepeated = true;
+            do {
+                let randomIndex = Math.floor(Math.random() * peliculas.length);
+                if (!usedIndexes.has(randomIndex)) {
+                    randomMovieIndexes.push(randomIndex);
+                    usedIndexes.add(randomIndex); // Añadimos el índice al conjunto
+                    isRepeated = false;
+                }
+            } while (isRepeated);
         }
-    }
-
-    // Crear tarjetas de películas utilizando los índices aleatorios
-    randomMovieIndexes.forEach(index => {
-        const movie = peliculas[index];
-        const movieElement = document.createElement('section');
-        movieElement.classList.add('peli-recomendada');
-
-        const movieImage = document.createElement('img');
-        movieImage.classList.add('portada-recomendacion');
-        movieImage.src = movie[2];
-        movieImage.alt = 'Portada de ' + movie[0];
-
-        // Agregar un listener al clicar la imagen para redirigir a la página de la película
-        movieImage.addEventListener('click', function () {
-            localStorage.setItem("movieIndex", index);
-            window.location.href = 'pelicula.html';
+        // Crear tarjetas de películas utilizando los índices aleatorios
+        const movieRow = document.createElement('section');
+        movieRow.classList.add('fila-peliculas');
+        randomMovieIndexes.forEach(index => {
+            const movieElement = document.createElement('section');
+            movieElement.classList.add('peli-recomendada');
+    
+            const movie = peliculas[index];
+            const movieImage = document.createElement('img');
+            movieImage.classList.add('portada-recomendacion');
+            movieImage.src = movie[2];
+            movieImage.alt = 'Portada de ' + movie[0];
+    
+            // Agregar un listener al clicar la imagen para redirigir a la página de la película
+            movieImage.addEventListener('click', function () {
+                localStorage.setItem("movieIndex", index);
+                window.location.href = 'pelicula.html';
+            });
+    
+            movieElement.appendChild(movieImage);
+            movieRow.appendChild(movieElement);
         });
-
-        movieElement.appendChild(movieImage);
-        tarjetasSection.appendChild(movieElement);
-    });
+        tarjetasSection.appendChild(movieRow);
+    }
 });
 
 function redirigirAPelicula(index) {
