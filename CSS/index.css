@@ -98,7 +98,7 @@ main {
     z-index: 2;
     margin-top: 5%;
     margin-bottom: 0;
-    font-size: 7vW;
+    font-size: 6vW;
     font-weight: bold;
     width: 80%;
     padding-left: 5%;
@@ -166,7 +166,7 @@ main {
 }
 
 #tituloContenedor3 {
-    font-size: 7vw;
+    font-size: 6vw;
     font-weight: bold;
     text-align: center;
     margin-bottom: 5%;
