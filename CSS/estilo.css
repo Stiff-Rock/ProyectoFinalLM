@@ -1,8 +1,5 @@
-html {
-    font-family: Verdana;
-}
-
 body {
+    font-family: Verdana;
     margin: 0%;
     background-color: rgba(14, 13, 19, 0.9);
     color: rgb(240, 240, 240);
@@ -16,7 +13,7 @@ header {
 }
 
 #headerSection {
-    margin-left: 1.5%;
+    margin-left: 1%;
     margin-bottom: 1%;
 }
 

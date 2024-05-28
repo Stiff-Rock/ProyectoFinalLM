@@ -4,25 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/estilo.css">
+    <link rel="stylesheet" href="../CSS/index.css">
     <link rel="icon" type="image/favicon.ico" href="IMG/Favicon.ico">
     <title>Bienvenido</title>
 </head>
 
 <header>
-    <a><img id="logoHeader" src="../IMG/logo.svg" alt="Logo de pixar"></a>
-    <nav>
-        <a class="textoNav" href="menu.html">Menu</a>
-        <a class="textoNav" href="form.html">Solicitar pelicula</a>
-    </nav>
+    <a id="logoLink" href="index.html">
+        <img id="logo" src="../IMG/logo.svg" alt="Logo de pixar">
+    </a>
 </header>
 
 <body>
     <main>
-
+        <section id="bannerPrincipal">
+            <section class="textoEslogan">
+                <h1 id="eslogan">ANIMATION IN ONE CLICK</h1>
+                <p id="descripcionEslogan">En cualquier momento, cualquier lugar aquí estamos para que tengas un gran
+                    repertorio
+                    de todo tipo de películas de animación del mundo Pixar.
+                </p>
+                <section id="contenedorEnlace">
+                    <a id="enlace" href="../HTML/login.html">Iniciar Sesión</a>
+                </section>
+            </section>
+            <img id="imagenFondo" src="../IMG/imagenLanding.png" alt="imagen landing page">
+        </section>
+        <section id="contenedor2">
+            <section>
+                <h2 id="texto2contenedor">Los más clásicos</h2>
+            </section>
+            <section id="contenedorPelis">
+                <img class="imagenClasicos" src="../IMG/increible.png" alt="Película 1">
+                <img class="imagenClasicos" src="../IMG/cars.png" alt="Película 2">
+                <img class="imagenClasicos" src="../IMG/nemoCartelera.png" alt="Película 3">
+                <img class="imagenClasicos" src="../IMG/toy1.jpg" alt="Película 4">
+                <img class="imagenClasicos" src="../IMG/monsters.jpg" alt="Película 5">
+                <img class="imagenClasicos" src="../IMG/walle.jpg" alt="Película 6">
+                <img class="imagenClasicos" src="../IMG/up.png" alt="Película 7">
+                <img class="imagenClasicos" src="../IMG/Ratatoullie.png" alt="Película 8">
+            </section>
+            <section class="contenedor-imagen">
+                <img id="imagenNemo" src="../IMG/nemo.png" alt="Nemo">
+            </section>
+        </section>
+        <section id="contenedor3">
+            <h1 id="tituloContenedor3">Lo más reciente</h1>
+            <section id="flex-contenedor3">
+                <section id="contenedorVideo">
+                    <iframe class="item1"
+                        src="https://www.youtube.com/embed/1PI7e75f3tQ?si=NGKsR_tlaEn5t4Pu&autoplay=1&mute=1"
+                        frameborder="0"></iframe>
+                </section>
+                <section id="subcontenedorImagenes3">
+                    <img class="imagenContenedor3 item2" src="../IMG/soul1.png" alt="Película 1">
+                    <img class="imagenContenedor3 item3" src="../IMG/soul2.png" alt="Película 2">
+                    <img class="imagenContenedor3 item4" src="../IMG/soul3.png" alt="Película 3">
+                </section>
+            </section>
+        </section>
     </main>
 </body>
-    <footer>
-        <h3>&copy; NOMBREEE</h3>
-    </footer>
+<footer>
+    <p>Disponible en todas las plataformas: Móvil Tablet Ordenador</p>
+    <p>Ofrecemos distintos tipos de servicios: solicitar películas, reseñas de películas y críticas </p>
+</footer>
+
 </html>
