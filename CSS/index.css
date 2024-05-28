@@ -94,7 +94,8 @@ main {
 #texto2contenedor{
     position: absolute;
     z-index: 2;
-    margin-top: 10%;
+    margin-top: 5%;
+    margin-bottom: 0;
     font-size: 5em;
     font-weight: bold;
     width: 80%;
@@ -102,9 +103,23 @@ main {
 }
 
 #contenedorPelis{
+    margin: 18%;
     position: absolute;
     z-index: 2;
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 25px;
+    padding: 10px;
+}
+
+.imagenClasicos{
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    box-shadow: 0 0 15px rgba(123, 123, 123, 0.8);
+
 }
 
 .contenedor-imagen{
@@ -134,4 +149,18 @@ main {
 .contenedor-imagen2{
     position: relative;
     z-index: 1;
+}
+
+
+#contenedor3{
+    display: flex;
+    margin: 20%;
+    margin-top: 5%;
+}
+
+#tituloContenedor3{
+    font-size: 3.5em;
+    font-weight: bold;
+    margin: 0;
+
 }
