@@ -1,4 +1,3 @@
-
 header {
     margin: 0;
     padding: 0;
@@ -22,7 +21,8 @@ main {
     margin: 0;
     padding: 0;
 }
-#bannerPrincipal{
+
+#bannerPrincipal {
     display: flex;
     margin-bottom: 8%;
 }
@@ -40,7 +40,7 @@ main {
 .textoEslogan {
     display: flex;
     flex-direction: column;
-    margin-top: 15%;
+    margin-top: 12%;
     position: absolute;
     text-align: center;
     justify-content: center;
@@ -52,7 +52,7 @@ main {
 }
 
 #eslogan {
-    font-size: 3em;
+    font-size: 3vw;
     font-weight: bold;
     font-style: italic;
     margin: 5%;
@@ -60,49 +60,51 @@ main {
     text-align: center;
 }
 
-#descripcionEslogan{
-    font-size: 1.5em;
+#descripcionEslogan {
+    font-size: 2vw;
     margin: 3%;
     color: white;
     text-align: center;
 }
 
-#contenedorEnlace{
+#contenedorEnlace {
     border-radius: 30px;
     align-items: center;
     justify-content: center;
     margin: 5%;
     background-color: rgb(30, 187, 211);
-    width: 50%;
+    width: 15vw;
     height: auto;
     padding: 2%;
 }
 
-#enlace{
+#enlace {
     text-decoration: none;
     color: white;
-    font-size: 2em;
+    font-size: 1.5vw;
     font-weight: bold;
     text-align: center;
     padding: 5%;
 }
-#contenedor2{
+
+#contenedor2 {
     display: flex;
     width: 100%;
     height: auto;
 }
-#texto2contenedor{
+
+#texto2contenedor {
     position: absolute;
     z-index: 2;
     margin-top: 5%;
     margin-bottom: 0;
-    font-size: 5em;
+    font-size: 7vW;
     font-weight: bold;
     width: 80%;
     padding-left: 5%;
 }
 
-#contenedorPelis{
+#contenedorPelis {
     margin: 18%;
     position: absolute;
     z-index: 2;
@@ -113,7 +115,7 @@ main {
     padding: 10px;
 }
 
-.imagenClasicos{
+.imagenClasicos {
     width: 80%;
     height: auto;
     object-fit: cover;
@@ -122,18 +124,19 @@ main {
 
 }
 
-.contenedor-imagen{
+.contenedor-imagen {
     position: relative;
     z-index: 1;
 }
 
-#imagenNemo{
+#imagenNemo {
     z-index: 0;
     width: 100%;
     height: auto;
     object-fit: cover;
     position: relative;
 }
+
 .contenedor-imagen::after {
     content: '';
     position: absolute;
@@ -142,53 +145,233 @@ main {
     width: 100%;
     height: 100%;
     background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-    z-index: 1; /* Asegura que la sombra esté por encima de la imagen */
-    pointer-events: none; /* Permite que los clics pasen a través del pseudo-elemento */
+    z-index: 1;
+    /* Asegura que la sombra esté por encima de la imagen */
+    pointer-events: none;
+    /* Permite que los clics pasen a través del pseudo-elemento */
 }
 
-.contenedor-imagen2{
+.contenedor-imagen2 {
     position: relative;
     z-index: 1;
 }
 
 
-#contenedor3{
+#contenedor3 {
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+    margin-top: 5%;
+    padding: 2%;
+}
+
+#tituloContenedor3 {
+    font-size: 7vw;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#flex-contenedor3 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+#contenedorVideo {
+    grid-row: span 3;
+}
+
+iframe {
+    width: 100%;
+    height: 89%;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.8);
+}
+
+#subcontenedorImagenes3 {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    /* Tres filas de igual tamaño */
+}
+
+.imagenContenedor3 {
+    width: 100%;
+    margin-bottom: 10%;
+    box-shadow: 0 0 25px rgba(210, 210, 210, 0.8);
+    height: auto;
+    display: block;
+}
+
+#contenedor4 {
     display: flex;
     margin: 20%;
-    margin-top: 5%;
 }
 
-#tituloContenedor3{
-    font-size: 3.5em;
-    font-weight: bold;
+footer {
+    background-color: rgba(123, 123, 123, 0.8);
     margin: 0;
-
-}
-
-#grid-contenedor3{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(4, auto);
-    gap: 10px;
-    padding: 20px;
-    grid-template-areas:
-        "item1 item3"
-        "item2 item4"
-        "item2 item5"
-        "item2 item6";
-}
-.grid-item {
-    background-color: #4CAF50;
-    color: white;
-    border: 1px solid #ccc;
-    padding: 20px;
     text-align: center;
-    font-size: 30px;
+    align-items: center;
+    padding: 1%;
+    font-weight: bold;
 }
 
-.item1 { grid-area: item1; }
-.item2 { grid-area: item2; }
-.item3 { grid-area: item3; }
-.item4 { grid-area: item4; }
-.item5 { grid-area: item5; }
-.item6 { grid-area: item6; }
+@media (max-width: 590px) {
+    .textoEslogan {
+        width: 100%;
+    }
+
+    #imagenFondo {
+        display: none;
+    }
+
+    #logo {
+        width: 40%;
+    }
+
+    #eslogan {
+        font-size: 5vw;
+    }
+
+    #descripcionEslogan {
+        font-size: 3vw;
+    }
+
+    #contenedorEnlace {
+        width: 25vw;
+    }
+
+    #enlace {
+        font-size: 2.5vw;
+    }
+
+    #contenedor2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #texto2contenedor {
+        font-size: 10vw;
+        text-align: center;
+        position: unset;
+        padding-left: 0%;
+        width: 100%;
+    }
+
+    #contenedorPelis {
+        grid-template-columns: 1fr 1fr;
+        margin: 10%;
+        position: unset;
+    }
+
+    .imagenClasicos {
+        width: 100%;
+    }
+
+    #imagenNemo {
+        display: none;
+    }
+
+    #tituloContenedor3 {
+        font-size: 5vw;
+    }
+
+    #flex-contenedor3 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    #contenedorVideo {
+        grid-row: auto;
+        height: 50vh;
+    }
+
+    iframe {
+        height: 50vh;
+    }
+    #tituloContenedor3 {
+        font-size: 8vw;
+    }
+
+    #subcontenedorImagenes3 {
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .imagenContenedor3 {
+        margin-bottom: 5%;
+    }
+
+    #contenedor3 {
+        margin: 5%;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+
+    @media (max-width: 480px) {
+        #logo {
+            width: 60%;
+        }
+
+        #eslogan {
+            font-size: 6vw;
+        }
+
+        #descripcionEslogan {
+            font-size: 4vw;
+        }
+
+        #contenedorEnlace {
+            width: 30vw;
+        }
+
+        #enlace {
+            font-size: 3vw;
+        }
+
+        #texto2contenedor {
+            font-size: 6vw;
+            padding-left: 1%;
+        }
+
+        #contenedorPelis {
+            grid-template-columns: 1fr;
+            margin: 5%;
+        }
+
+        #tituloContenedor3 {
+            font-size: 4vw;
+        }
+
+        #flex-contenedor3 {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto;
+        }
+
+        #contenedorVideo {
+            grid-row: auto;
+            height: 40vh;
+        }
+
+        iframe {
+            height: 40vh;
+        }
+
+        #subcontenedorImagenes3 {
+            grid-template-rows: repeat(3, auto);
+        }
+
+        .imagenContenedor3 {
+            margin-bottom: 5%;
+        }
+
+        #contenedor3 {
+            margin: 3%;
+        }
+
+        footer {
+            font-size: 0.6em;
+        }
+    }
+}
