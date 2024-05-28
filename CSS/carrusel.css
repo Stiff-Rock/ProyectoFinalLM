@@ -132,6 +132,8 @@
 }
 
 .peli-recomendada {
+    width: 15vw;
+    height: auto;
     padding: 1%;
     transition: 0.3s;
 }
@@ -141,7 +143,7 @@
 }
 
 .portada-recomendacion {
-    width: 13vw;
+    width: 100%;
     height: auto;
     border-radius: 1rem;
 }
@@ -161,12 +163,19 @@
     border: none;
 }
 
+.titulo-recomendacion {
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 @media (max-width: 768px) {
     .mySlider {
         height: 20rem;
         /* 500px */
     }
-
 
     .portada-recomendacion {
         border-radius: 0rem;
@@ -189,4 +198,16 @@
         display: none;
     }
 
+    .peli-recomendada {
+        width: 30vw;
+    }
+
+    .oculto {
+        display: none;
+    }
+
+    .titulo-recomendacion {
+        font-size: 4vw;
+    }
+    
 }

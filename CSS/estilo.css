@@ -28,6 +28,7 @@ main {
 footer {
     font-size: 80%;
     background-color: rgba(20, 19, 24, 0.9);
+    padding: 0.5% 1% 1% 0;
 }
 
 #infoFooter {
@@ -47,6 +48,7 @@ footer {
 
 #footerCopyrigth {
     margin-left: 1%;
+    margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
